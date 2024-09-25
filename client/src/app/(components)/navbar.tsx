@@ -3,18 +3,18 @@
 import Link from "next/link";
 import { Bell, Menu, Moon, Settings, Sun } from "lucide-react";
 
-import { setIsDarkMode, setIsSideBarCollapsed } from "@/state";
-import { useAppDispatch, useAppSelector } from "../app/redux";
+import { setIsDarkMode, setIsSidebarCollapsed } from "@/state";
+import { useAppDispatch, useAppSelector } from "../redux";
 
 const Navbar = () => {
   const dispatch = useAppDispatch();
-  const isSideBarCollapsed = useAppSelector(
-    (state) => state.global.isSideBarCollapsed
+  const isSidebarCollapsed = useAppSelector(
+    (state) => state.global.isSidebarCollapsed
   );
   const isDarkMode = useAppSelector((state) => state.global.isDarkMode);
 
   const toogleSideBar = () => {
-    dispatch(setIsSideBarCollapsed(!isSideBarCollapsed));
+    dispatch(setIsSidebarCollapsed(!isSidebarCollapsed));
   };
 
   const toogleDarkMode = () => {

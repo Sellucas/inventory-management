@@ -3,10 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import DashboardWrapper from "./dashboard-wrapper";
 
-const font = Inter({
-  subsets: ["latin"],
-  display: "swap",
-});
+const font = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",

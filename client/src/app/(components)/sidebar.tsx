@@ -13,8 +13,8 @@ import {
   User,
 } from "lucide-react";
 
-import { setIsSideBarCollapsed } from "@/state";
-import { useAppDispatch, useAppSelector } from "../app/redux";
+import { setIsSidebarCollapsed } from "@/state";
+import { useAppDispatch, useAppSelector } from "../redux";
 
 interface SidebarLinksProps {
   href: string;
@@ -57,29 +57,29 @@ const SidebarLinks = ({
 
 const Sidebar = () => {
   const dispatch = useAppDispatch();
-  const isSideBarCollapsed = useAppSelector(
-    (state) => state.global.isSideBarCollapsed
+  const isSidebarCollapsed = useAppSelector(
+    (state) => state.global.isSidebarCollapsed
   );
 
   const toogleSideBar = () => {
-    dispatch(setIsSideBarCollapsed(!isSideBarCollapsed));
+    dispatch(setIsSidebarCollapsed(!isSidebarCollapsed));
   };
 
   const sidebarClassName = `fixed flex flex-col ${
-    isSideBarCollapsed ? "w-0 md:w-16" : "w-72 md:w-64"
+    isSidebarCollapsed ? "w-0 md:w-16" : "w-72 md:w-64"
   } bg-white transition-all duration-300 overflow-hidden h-full shadow-md z-40`;
 
   return (
     <div className={sidebarClassName}>
       <div
         className={`flex gap-3 justify-between md:justify-normal items-center pt-8 ${
-          isSideBarCollapsed ? "px-5" : "px-8"
+          isSidebarCollapsed ? "px-5" : "px-8"
         }`}
       >
         <div>LOGO</div>
         <h1
           className={`font-extrabold text-2xl uppercase ${
-            isSideBarCollapsed ? "hidden" : "block"
+            isSidebarCollapsed ? "hidden" : "block"
           }`}
         >
           saphira
@@ -96,40 +96,40 @@ const Sidebar = () => {
           href={"/dashboard"}
           icon={Layout}
           label={"Dashboard"}
-          isCollapsed={isSideBarCollapsed}
+          isCollapsed={isSidebarCollapsed}
         />
         <SidebarLinks
           href={"/inventory"}
           icon={Archive}
           label={"Inventory"}
-          isCollapsed={isSideBarCollapsed}
+          isCollapsed={isSidebarCollapsed}
         />
         <SidebarLinks
           href={"/products"}
           icon={Clipboard}
           label={"Products"}
-          isCollapsed={isSideBarCollapsed}
+          isCollapsed={isSidebarCollapsed}
         />
         <SidebarLinks
           href={"/users"}
           icon={User}
           label={"Users"}
-          isCollapsed={isSideBarCollapsed}
+          isCollapsed={isSidebarCollapsed}
         />
         <SidebarLinks
           href={"/settings"}
           icon={SlidersHorizontal}
           label={"Settings"}
-          isCollapsed={isSideBarCollapsed}
+          isCollapsed={isSidebarCollapsed}
         />
         <SidebarLinks
           href={"/expenses"}
           icon={CircleDollarSign}
           label={"Expenses"}
-          isCollapsed={isSideBarCollapsed}
+          isCollapsed={isSidebarCollapsed}
         />
       </div>
-      <div className={`${isSideBarCollapsed ? "hidden" : "block"} mb-10`}>
+      <div className={`${isSidebarCollapsed ? "hidden" : "block"} mb-10`}>
         <p className="text-center text-xs text-gray-500">&copy; 2024 SAPHIRA</p>
       </div>
     </div>
