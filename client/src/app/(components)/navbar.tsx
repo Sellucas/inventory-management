@@ -3,8 +3,8 @@
 import Link from "next/link";
 import { Bell, Menu, Moon, Settings, Sun } from "lucide-react";
 
-import { setIsDarkMode, setIsSidebarCollapsed } from "@/state";
 import { useAppDispatch, useAppSelector } from "../redux";
+import { setIsDarkMode, setIsSidebarCollapsed } from "@/state";
 
 const Navbar = () => {
   const dispatch = useAppDispatch();
