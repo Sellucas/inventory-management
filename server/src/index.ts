@@ -7,6 +7,7 @@ import bodyParser from "body-parser";
 
 import dashboardRoutes from "./routes/dashboardRoutes";
 import productRoutes from "./routes/productRoutes";
+import usersRoutes from "./routes/userRoutes";
 
 /* CONFIGURATIONS */
 dotenv.config();
@@ -22,6 +23,7 @@ app.use(cors());
 /* ROUTES */
 app.use("/dashboard", dashboardRoutes);
 app.use("/products", productRoutes);
+app.use("/users", usersRoutes);
 
 /* SERVER */
 const port = process.env.PORT || 3001;
