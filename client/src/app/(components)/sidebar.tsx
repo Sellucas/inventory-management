@@ -15,6 +15,7 @@ import {
 
 import { setIsSidebarCollapsed } from "@/state";
 import { useAppDispatch, useAppSelector } from "../redux";
+import Image from "next/image";
 
 interface SidebarLinksProps {
   href: string;
@@ -76,7 +77,13 @@ const Sidebar = () => {
           isSidebarCollapsed ? "px-5" : "px-8"
         }`}
       >
-        <div>LOGO</div>
+        <Image
+          src="https://s3-inventorymanagement-initial.s3.sa-east-1.amazonaws.com/logo.svg"
+          alt="saphira"
+          width={27}
+          height={27}
+          className="rounded w-8"
+        />
         <h1
           className={`font-extrabold text-2xl uppercase ${
             isSidebarCollapsed ? "hidden" : "block"
