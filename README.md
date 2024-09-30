@@ -18,5 +18,5 @@ This is a study project focused on inventory management, developed with the goal
 - **AWS S3** For file storage.
 
 ## Directory Structure
-``/server``: Backend code (Express.js, Prisma, Typescirpt). <br/>
+``/server``: Backend code (Express.js, Prisma, Typescript). <br/>
 ``/client``: Frontend code (Next.js, Redux, Tailwind, MUI).
