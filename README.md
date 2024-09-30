@@ -17,6 +17,11 @@ This is a study project focused on inventory management, developed with the goal
 - **AWS Amplify** For deploying the frontend (Next.js).
 - **AWS S3** For file storage.
 
+## AWS Architecture
+
+![aws-arch](https://github.com/user-attachments/assets/29b68d3e-1357-4187-829d-9d98627c57e8)
+
+
 ## Directory Structure
 ``/server``: Backend code (Express.js, Prisma, Typescript). <br/>
 ``/client``: Frontend code (Next.js, Redux, Tailwind, MUI).
