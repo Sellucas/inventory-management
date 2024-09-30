@@ -1,12 +1,13 @@
 "use client";
 
 import {
-  CheckCircle,
-  Package,
   Tag,
-  TrendingDown,
+  Package,
   TrendingUp,
+  CheckCircle,
+  TrendingDown,
 } from "lucide-react";
+
 import CardExpenseSummary from "./CardExpenseSummary";
 import CardPopularProducts from "./CardPopularProducts";
 import CardPurchaseSummary from "./CardPurchaseSummary";

@@ -39,15 +39,15 @@ const SidebarLinks = ({
       <div
         className={`cursor-pointer flex items-center ${
           isCollapsed ? "justify-center py-4" : "justify-start px-8 py-4"
-        } hover: text-blue-500 hover:bg-blue-100 gap-3 transition-all ${
-          isActive ? "bg-blue-200 text-white" : ""
+        } hover:bg-blue-100 gap-3 transition-all ${
+          isActive ? "bg-blue-100 text-blue-600" : ""
         }`}
       >
-        <Icon className="w-6 h-6 !text-gray-700" />
+        <Icon className="w-6 h-6" />
         <span
           className={`${
             isCollapsed ? "hidden" : "block"
-          } font-medium text-gray-700`}
+          } font-medium`}
         >
           {label}
         </span>

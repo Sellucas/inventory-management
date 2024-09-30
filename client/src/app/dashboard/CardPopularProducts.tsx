@@ -16,7 +16,7 @@ const CardPopularProducts = () => {
             Popular Products
           </h3>
           <hr />
-          <div className="overflow-auto h-full">
+          <div className="overflow-auto h-full scrollbar-thin scrollbar-light">
             {dashboardMetrics?.popularProducts.map((product) => (
               <div
                 key={product.name}

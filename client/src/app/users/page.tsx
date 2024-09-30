@@ -32,6 +32,12 @@ const Users = () => {
         getRowId={(row) => row.userId}
         checkboxSelection
         className="bg-white shadow rounded-lg border border-gray-200 mt-5 !text-gray-700"
+        sx={{
+          "& .MuiDataGrid-columnHeader, & .MuiDataGrid-filler": {
+            backgroundColor: "white",
+            color: "#374151",
+          },
+        }}
       />
     </div>
   );
